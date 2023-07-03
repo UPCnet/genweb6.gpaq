@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records
+    interface="Products.CMFPlone.interfaces.IBundleRegistry"
+    prefix="plone.bundles/gpaq-bundle">
+
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="resources">
+      <element>gpaq-main</element>
+    </value>
+    <value key="jscompilation" />
+    <value key="csscompilation">++theme++genweb6.gpaq/stylesheets/theme-gpaq.min.css</value>
+
+  </records>
+
+</registry>

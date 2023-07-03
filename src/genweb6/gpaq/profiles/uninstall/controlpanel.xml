@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object name="portal_controlpanel" meta_type="Plone Control Panel Tool">
+
+  <configlet
+    action_id="genweb.gpaq"
+    appId="genweb.gpaq"
+    remove="True">
+
+  </configlet>
+
+</object>

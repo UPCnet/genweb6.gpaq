@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<object name="genweb6.dashboard" meta_type="Dexterity FTI" i18n:domain="genweb6.gpaq"
+        xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <property name="title" i18n:translate="">Dashboard</property>
+    <property name="description" i18n:translate=""></property>
+    <property name="icon_expr">string:bar-chart-fill</property>
+    <property name="allow_discussion">False</property>
+    <property name="global_allow">True</property>
+    <property name="filter_content_types">True</property>
+
+    <property name="schema">genweb6.gpaq.content.dashboard.dashboard.IDashboard</property>
+    <property name="klass">genweb6.gpaq.content.dashboard.dashboard.Dashboard</property>
+    <property name="add_permission">cmf.AddPortalContent</property>
+    <property name="factory">Dashboard</property>
+    <property name="link_target"></property>
+    <property name="immediate_view">view</property>
+    <property name="add_view_expr">string:${folder_url}/++add++genweb6.dashboard</property>
+    <property name="schema_policy">dexterity</property>
+
+    <property name="behaviors">
+        <element value="plone.namefromtitle" />
+        <element value="plone.excludefromnavigation" />
+        <element value="plone.dublincore" />
+        <element value="plone.translatable" />
+        <element value="plone.locking" />
+    </property>
+
+    <property name="default_view">view</property>
+    <property name="default_view_fallback">False</property>
+    <property name="view_methods">
+        <element value="view" />
+    </property>
+
+    <!-- Method aliases -->
+    <alias from="(Default)" to="(dynamic view)"/>
+    <alias from="edit" to="@@edit"/>
+    <alias from="sharing" to="@@sharing"/>
+    <alias from="view" to="(selected layout)"/>
+
+    <!-- Actions -->
+    <action title="View" action_id="view" category="object" condition_expr=""
+            url_expr="string:${object_url}" visible="True">
+
+        <permission value="View" />
+    </action>
+
+    <action title="Edit" action_id="edit" category="object" condition_expr=""
+            url_expr="string:${object_url}/edit" visible="True">
+
+        <permission value="Modify portal content" />
+    </action>
+
+</object>

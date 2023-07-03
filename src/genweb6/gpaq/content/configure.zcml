@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="genweb6.gpaq">
+
+    <browser:page
+        name="view"
+        for="genweb6.gpaq.content.dashboard.dashboard.IDashboard"
+        class=".dashboard.dashboard.View"
+        layer="..interfaces.IGenweb6GpaqLayer"
+        permission="zope2.View"
+        template="dashboard/dashboard.pt"
+        />
+
+</configure>

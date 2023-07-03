@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="plone">
+
+<body>
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core" tal:define="embed context/get_embed">
+
+    <p tal:condition="not:embed">Error</p>
+
+    <div class="responsive-iframe-container"
+         tal:condition="embed">
+
+        <iframe class="responsive-iframe"
+                tal:attributes="src embed;
+                                title string:Dashboard - {context/title}"></iframe>
+    </div>
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>
