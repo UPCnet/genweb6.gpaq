@@ -12,4 +12,12 @@
         template="dashboard/dashboard.pt"
         />
 
+    <browser:page
+        name="getembedinfo"
+        for="genweb6.gpaq.content.dashboard.dashboard.IDashboard"
+        class=".dashboard.dashboard.GetEmbedInfo"
+        layer="..interfaces.IGenweb6GpaqLayer"
+        permission="zope2.View"
+        />
+
 </configure>

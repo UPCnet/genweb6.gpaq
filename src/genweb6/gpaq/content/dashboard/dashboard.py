@@ -9,6 +9,8 @@ from zope.interface import implementer
 from genweb6.gpaq import _
 from genweb6.gpaq.api.report import get_embed_params_for_single_report
 
+import json
+
 
 class IDashboard(model.Schema):
 
@@ -30,11 +32,14 @@ class Dashboard(Item):
     def b_icon_expr(self):
         return "bar-chart-fill"
 
-    def get_embed(self):
-        embed = get_embed_params_for_single_report(self.workspace_id, self.report_id)
-        if embed:
-            return embed
-
 
 class View(BrowserView):
     pass
+
+
+class GetEmbedInfo(BrowserView):
+
+    def __call__(self):
+        embed = get_embed_params_for_single_report(self.context.workspace_id, self.context.report_id)
+        if embed:
+            return json.loads(embed)

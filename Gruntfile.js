@@ -3,40 +3,11 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        compass: {
-            css: {
-                options: {
-                    sassDir: 'scss/',
-                    cssDir: 'stylesheets/',
-                }
-            }
-        },
-        concat: {
-            options: {
-                separator: '',
-            },
-            css: {
-                src: ['stylesheets/theme.css'],
-                dest: 'stylesheets/theme-concat.css',
-            }
-        },
-        cssmin: {
-            css : {
-                src : ["stylesheets/theme-concat.css"],
-                dest : "stylesheets/theme-gpaq.min.css",
-            }
-        },
-        watch: {
-            css: {
-                files: [
-                    'scss/*'
-                ],
-                tasks: ['compass:css', 'concat:css', 'cssmin:css']
-            },
-        },
         uglify: {
             js: {
-                files: {}
+                files: {
+                    'js/dashboard.min.js': '../content/dashboard/dashboard.js',
+                }
             }
         },
         browserSync: {

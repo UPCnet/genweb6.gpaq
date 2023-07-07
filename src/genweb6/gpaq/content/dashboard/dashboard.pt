@@ -8,17 +8,18 @@
 
 <body>
 <metal:content-core fill-slot="content-core">
-<metal:block define-macro="content-core" tal:define="embed context/get_embed">
+<metal:block define-macro="content-core">
 
-    <p tal:condition="not:embed">Error</p>
+    <div class="responsive-iframe-container">
 
-    <div class="responsive-iframe-container"
-         tal:condition="embed">
+        <div id="report-container" class="responsive-iframe"></div>
 
-        <iframe class="responsive-iframe"
-                tal:attributes="src embed;
-                                title string:Dashboard - {context/title}"></iframe>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/powerbi-client/2.15.1/powerbi.min.js"></script>
+    <script type="text/javascript"
+            tal:attributes="src string:${context/absolute_url}/++theme++genweb6.gpaq/js/dashboard.min.js">
+    </script>
 
 </metal:block>
 </metal:content-core>
