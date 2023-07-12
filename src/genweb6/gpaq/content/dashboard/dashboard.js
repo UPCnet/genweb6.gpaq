@@ -20,7 +20,7 @@ $(function () {
 
     $.ajax({
         type: "GET",
-        url: "getembedinfo",
+        url: $("body").attr("data-base-url") + "/getembedinfo",
         dataType: "json",
         success: function (data) {
             embedData = $.parseJSON(JSON.stringify(data));

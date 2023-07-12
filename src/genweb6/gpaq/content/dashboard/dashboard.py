@@ -6,6 +6,7 @@ from plone.supermodel import model
 from zope import schema
 from zope.interface import implementer
 
+from genweb6.core.utils import json_response
 from genweb6.gpaq import _
 from genweb6.gpaq.api.report import get_embed_params_for_single_report
 
@@ -39,6 +40,7 @@ class View(BrowserView):
 
 class GetEmbedInfo(BrowserView):
 
+    @json_response
     def __call__(self):
         embed = get_embed_params_for_single_report(self.context.workspace_id, self.context.report_id)
         if embed:
