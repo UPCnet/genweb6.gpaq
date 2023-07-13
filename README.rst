@@ -1,63 +1,36 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
-
-.. image:: https://github.com/collective/genweb6.gpaq/actions/workflows/plone-package.yml/badge.svg
-    :target: https://github.com/collective/genweb6.gpaq/actions/workflows/plone-package.yml
-
-.. image:: https://coveralls.io/repos/github/collective/genweb6.gpaq/badge.svg?branch=main
-    :target: https://coveralls.io/github/collective/genweb6.gpaq?branch=main
-    :alt: Coveralls
-
-.. image:: https://codecov.io/gh/collective/genweb6.gpaq/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/collective/genweb6.gpaq
-
-.. image:: https://img.shields.io/pypi/v/genweb6.gpaq.svg
-    :target: https://pypi.python.org/pypi/genweb6.gpaq/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/status/genweb6.gpaq.svg
-    :target: https://pypi.python.org/pypi/genweb6.gpaq
-    :alt: Egg Status
-
-.. image:: https://img.shields.io/pypi/pyversions/genweb6.gpaq.svg?style=plastic   :alt: Supported - Python Versions
-
-.. image:: https://img.shields.io/pypi/l/genweb6.gpaq.svg
-    :target: https://pypi.python.org/pypi/genweb6.gpaq/
-    :alt: License
-
-
-===========
+============
 genweb6.gpaq
-===========
+============
 
-Genweb 6 GPAQ package
 
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
+Permite mostrar mostrar dashboards de Microsoft Power BI sin pedir autentificación al usuario.
+​
 
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+El paquete consiste de un controlpanel @@gpaq-settings donde almacenamos los parámetros:
 
+- TENANT_ID
+- CLIENT_ID
+- CLIENT_SECRET
 
-Translations
-------------
+Este controlpanel solo es accesible para los gestores de la plataforma, los datos tendrán que ser
+proporcionados por el cliente.
 
-This product has been translated into
+Despues tenemos un tipo de contenido Dashboard [ genweb6.dashboard ] con los siguientes parámetros:
 
-- Klingon (thanks, K'Plai)
+- WORKSPACE_ID
+- REPORT_ID
+
+El Dashboard lo puede crear cualquier usuario editor de la plataforma.
+
+Para todo el funcionamiento se ha adaptado la siguiente documentación / ejemplo que proporciona Microsft:
+
+https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/Python/Embed%20for%20your%20customers/AppOwnsData
 
 
 Installation
@@ -74,35 +47,6 @@ Install genweb6.gpaq by adding it to your buildout::
 
 
 and then running ``bin/buildout``
-
-
-Authors
--------
-
-Provided by awesome people ;)
-
-
-Contributors
-------------
-
-Put your name here, you deserve it!
-
-- ?
-
-
-Contribute
-----------
-
-- Issue Tracker: https://github.com/collective/genweb6.gpaq/issues
-- Source Code: https://github.com/collective/genweb6.gpaq
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
