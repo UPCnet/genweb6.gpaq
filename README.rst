@@ -6,7 +6,7 @@ genweb6.gpaq
 Features
 --------
 
-Permite mostrar mostrar dashboards de Microsoft Power BI sin pedir autentificación al usuario.
+Permite mostrar dashboards de Microsoft Power BI sin pedir autentificación al usuario.
 ​
 
 Documentation
