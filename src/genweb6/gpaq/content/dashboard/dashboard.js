@@ -11,6 +11,14 @@ $(function () {
     var reportLoadConfig = {
         type: "report",
         tokenType: models.TokenType.Embed,
+        settings: {
+            bars: {
+                statusBar: {
+                    visible: true
+                }
+            },
+            filterPaneEnabled: false
+        }
 
         // Enable this setting to remove gray shoulders from embedded report
         // settings: {
