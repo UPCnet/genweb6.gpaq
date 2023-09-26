@@ -2,11 +2,12 @@ Changelog
 =========
 
 
-1.1 (unreleased)
+1.1 (2023-09-26)
 ----------------
 
-- Nothing changed yet.
-
+* Fijar version de msal [Iago López]
+* [UPD] package.json [Iago López]
+* [FIX] Grunt issues [Ruben Padilla Mateu]
 
 1.0 (2023-09-12)
 ----------------
