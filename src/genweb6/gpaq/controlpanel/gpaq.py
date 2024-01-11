@@ -2,6 +2,7 @@
 from Products.statusmessages.interfaces import IStatusMessage
 
 from plone.app.registry.browser import controlpanel
+from plone.dexterity.interfaces import IDexteritySchema
 from plone.supermodel import model
 from z3c.form import button
 from zope import schema
@@ -10,7 +11,7 @@ from zope.ramcache import ram
 from genweb6.gpaq import _
 
 
-class IGpaqSettings(model.Schema):
+class IGpaqSettings(model.Schema, IDexteritySchema):
 
     tenant_id = schema.TextLine(
         title=_(u'TENANT_ID'),

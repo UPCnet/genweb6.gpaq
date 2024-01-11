@@ -2,6 +2,7 @@
 from Products.Five.browser import BrowserView
 
 from plone.dexterity.content import Item
+from plone.dexterity.interfaces import IDexteritySchema
 from plone.supermodel import model
 from zope import schema
 from zope.interface import implementer
@@ -13,7 +14,7 @@ from genweb6.gpaq.api.report import get_embed_params_for_single_report
 import json
 
 
-class IDashboard(model.Schema):
+class IDashboard(model.Schema, IDexteritySchema):
 
     workspace_id = schema.TextLine(
         title=_(u'WORKSPACE_ID'),
