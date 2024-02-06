@@ -53,11 +53,12 @@ $(function () {
 
             // Pages
             var pages = await report.getPages();
-            console.log(p)
-            console.log(pages)
+            console.log("Pages")
+            console.log(pages);
 
             if (filters['page'] !== null && filters['page'] !== "") {
               const p = pages.find(b => b.displayName === filters['page'])
+              console.log("Page")
               console.log(p)
               await report.setPage(p.name);
 
