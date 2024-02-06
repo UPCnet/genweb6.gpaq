@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-06-30 06:15+0000\n"
+"POT-Creation-Date: 2024-02-05 13:27+0000\n"
 "PO-Revision-Date: 2022-05-09 10:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: Plone Team@GPAQnet <plone.team@gpaqnet.es>\n"
@@ -16,62 +16,94 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "Language: es\n"
 
-#: ../controlpanel/gpaq.py:26
+#: ../controlpanel/gpaq.py:22
 msgid "CLIENT_ID"
-msgstr ""
+msgstr "CLIENT_ID"
 
-#: ../controlpanel/gpaq.py:31
+#: ../controlpanel/gpaq.py:27
 msgid "CLIENT_SECRET"
-msgstr ""
+msgstr "CLIENT_SECRET"
 
-#: ../controlpanel/gpaq.py:60
+#: ../controlpanel/gpaq.py:56
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
-#: ../controlpanel/gpaq.py:62
+#: ../controlpanel/gpaq.py:58
 msgid "Changes canceled."
-msgstr ""
+msgstr "Cambios cancelados."
 
-#: ../controlpanel/gpaq.py:57
+#: ../controlpanel/gpaq.py:53
 msgid "Changes saved"
-msgstr ""
+msgstr "Cambios guardados"
 
 #: ../profiles/default/types/genweb6.dashboard.xml
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
-#: ../controlpanel/gpaq.py:39
+#: ../content/dashboard/dashboard.py:44
+msgid "Filtre"
+msgstr "Filtro"
+
+#: ../content/dashboard/dashboard.py:31
+msgid "Filtres opcionals"
+msgstr "Filtros opcionales"
+
+#: ../controlpanel/gpaq.py:35
 msgid "Gpaq settings"
-msgstr ""
+msgstr "Gpaq settings"
 
-#: ../configure.zcml:20
+#: ../content/dashboard/dashboard.py:51
+msgid "Incloure el valor a filtrar, si són varis han d'anar separats per comes."
+msgstr "Incluir el valor a filtrar, si son varios deben ir separados por comas."
+
+#: ../configure.zcml:22
 msgid "Installs the genweb6.gpaq add-on."
-msgstr ""
+msgstr "Instalar el complemento genweb6.gpaq."
 
-#: ../content/dashboard/dashboard.py:15
+#: ../content/dashboard/dashboard.py:39
+msgid "Omplir amb el nom d'una pestanya en cas es requereixi que el report s'obri per defecte en aquesta pàgina."
+msgstr "Completar con el nombre de una pestaña en caso se requiera que el reporte se abra por defecto en esta página."
+
+#: ../content/dashboard/dashboard.py:45
+msgid "Omplir amb el nom de l'objecte visual a filtrar (slicer)."
+msgstr "Completar con el nombre del objeto visual a filtrar (slicer)."
+
+#: ../content/dashboard/dashboard.py:38
+msgid "Pàgina"
+msgstr "Página"
+
+#: ../content/dashboard/dashboard.py:26
 msgid "REPORT_ID"
-msgstr ""
+msgstr "REPORT_ID"
 
-#: ../controlpanel/gpaq.py:47
+#: ../controlpanel/gpaq.py:43
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
-#: ../controlpanel/gpaq.py:21
+#: ../controlpanel/gpaq.py:17
 msgid "TENANT_ID"
-msgstr ""
+msgstr "TENANT_ID"
 
-#: ../configure.zcml:29
+#: ../content/dashboard/dashboard.py:32
+msgid "Tant el nom de la pàgina, els filtres i els valors han de ser escrits exactament com apareixen en el report de Power BI."
+msgstr "Tanto el nombre de la página, los filtros y los valores deben ser escritos exactamente como aparecen en el reporte de Power BI."
+
+#: ../configure.zcml:31
 msgid "Uninstalls the genweb6.gpaq add-on."
-msgstr ""
+msgstr "Desinstalar el complemento genweb6.gpaq."
 
-#: ../controlpanel/gpaq.py:16
+#: ../content/dashboard/dashboard.py:50
+msgid "Valors"
+msgstr "Valores"
+
+#: ../content/dashboard/dashboard.py:21
 msgid "WORKSPACE_ID"
-msgstr ""
+msgstr "WORKSPACE_ID"
 
-#: ../configure.zcml:20
+#: ../configure.zcml:22
 msgid "genweb6.gpaq"
-msgstr ""
+msgstr "genweb6.gpaq"
 
-#: ../configure.zcml:29
+#: ../configure.zcml:31
 msgid "genweb6.gpaq (uninstall)"
-msgstr ""
+msgstr "genweb6.gpaq (desinstalar)"
