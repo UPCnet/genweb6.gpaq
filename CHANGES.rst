@@ -2,11 +2,12 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+1.3 (2024-02-07)
 ----------------
 
-- Nothing changed yet.
-
+* [FIX] JS [Iago López]
+* [FIX] Ver barra de herramientas [Iago López]
+* [UPD] Posibilidad de añadir filtros en los dashboards [Iago López]
 
 1.2 (2024-01-12)
 ----------------
