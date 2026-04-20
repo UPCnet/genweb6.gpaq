@@ -17,4 +17,12 @@
 
   </records>
 
+  <!-- folder_contents (pat-structure): plone.icon.contenttype mas portal type normalizado -->
+  <record name="plone.icon.contenttype/genweb6-dashboard">
+    <field type="plone.registry.field.TextLine">
+      <title>GPAQ dashboard</title>
+    </field>
+    <value key="resource">++plone++bootstrap-icons/bar-chart-fill.svg</value>
+  </record>
+
 </registry>
