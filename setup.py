@@ -55,7 +55,7 @@ setup(
         'plone.api>=1.8.4',
         'plone.app.dexterity',
         'genweb6.core',
-        'msal==1.22',
+        'msal>=1.31,<2',
     ],
     extras_require={
         'test': [

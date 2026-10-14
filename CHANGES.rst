@@ -5,7 +5,7 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Relajar el pin de msal (==1.22 -> >=1.31,<2) para permitir cryptography 44 (Plone 6.0.15).
 
 
 1.5 (2026-04-21)
