@@ -18,7 +18,7 @@ def get_access_token():
       client_credential=gpaq_config.client_secret,
       authority=authority)
 
-    response = clientapp.acquire_token_for_client(scopes=SCOPE_BASE)
+    response = clientapp.acquire_token_for_client(scopes=[SCOPE_BASE])
 
     try:
       return response['access_token']
